@@ -106,6 +106,12 @@ export default function ProfessionalTemplate() {
       icon: labelsIcon[3],
       component: <Description photo={intro.image} description={intro.summary} />,
     },
+  
+    {
+      title: labels[9],
+      icon: labelsIcon[9],
+      component: <EduSection education={education} />,
+    },
     {
       title: labels[4],
       icon: labelsIcon[4],
@@ -126,11 +132,10 @@ export default function ProfessionalTemplate() {
       icon: labelsIcon[7],
       component: <UnratedTabs items={practices} />,
     },
-    { title: labels[8], icon: labelsIcon[8], component: <UnratedTabs items={tools} /> },
-    {
-      title: labels[9],
-      icon: labelsIcon[9],
-      component: <EduSection education={education} />,
+    { 
+      title: labels[8],
+      icon: labelsIcon[8], 
+      component: <UnratedTabs items={tools} /> 
     },
   ];
 
